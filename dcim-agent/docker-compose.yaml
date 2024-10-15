@@ -1,0 +1,12 @@
+version: "3.5"
+
+services:
+  dcim:
+    build: .
+    image: dcim:latest
+    container_name: "python-dcim"
+    stdin_open: true
+    tty: true
+    ports:
+      - "8000:8000"
+
